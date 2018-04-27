@@ -1,6 +1,7 @@
 #
 # Makefile for the linux memory manager.
 #
+include $(srctree)/drivers/misc/mediatek/Makefile.custom
 
 mmu-y			:= nommu.o
 mmu-$(CONFIG_MMU)	:= fremap.o gup.o highmem.o memory.o mincore.o \
